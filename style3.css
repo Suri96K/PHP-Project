@@ -1,0 +1,100 @@
+body
+{
+	margin : 0;
+	padding : 0;
+	background-color : white;
+	font-size : 16px;
+	color : black;
+	font-weight : 300px;
+	background-image: images1/image4.jpg;
+}
+
+#profile-box
+{
+	position : relative;
+	margin : 5% auto;
+	height : 700px;
+	width : 725px;
+	background-color : #fff;
+	box-shadow : 0 2px 4px rgba(0 , 0 , 0 , 0.6);
+}
+
+.left-box 
+{
+	position : absolute;
+	top : 0;
+	left : 0;
+	box-sizing : border-box;
+	padding : 40px;
+	width : 365px;
+	height : 430px;
+}
+
+.left-down
+{
+	position : absolute;
+	top : 0;
+	left : 0;
+	box-sizing : border-box;
+	padding : 40px;
+	width : 370px;
+	height : 300px;
+	margin-top :800px;
+	margin-left : 10px;
+	margin-bottom:10px;
+}
+
+input[type="submit"]
+{
+	margin-bottom : 28px;
+	width : 130px;
+	height : 32px;
+	background-color : #f44336;
+	border : none;
+	border-radius : 2px;
+	color : #fff;
+	font-weight : 500;
+	text-transform : uppercase;
+	transition : 0.2s ease;
+	cursor : pointer;
+}
+
+.right-box
+{
+	position : absolute;
+	top : 0;
+	right : 0;
+	box-sizing : border-box;
+	padding : 40px;
+	width : 365px;
+	height : 600px;
+	background-size : cover;
+	background-position : center;
+	margin-left : 10px;
+}
+
+
+input[type="text"]
+{
+	display : block;
+	box-sizing : border-box;
+	margin-bottom : 20px;
+	padding : 4px;
+	width : 310px;
+	height : 32px;
+	border : none;
+	outline : none;
+	border-bottom : 1px solid #aaa;
+	font-weight : 400;
+	font-size : 16px;
+	transition : 0.2s ease;
+}
+	
+
+	
+	
+	
+	
+	
+	
+	

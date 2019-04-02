@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>beatPods</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" type="text/css" href="../plugin/css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/demo.css">
+	<link rel="stylesheet" type="text/css" href="styles/stylesheet1.css">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	
+	
+	
+    
+	
+	
+	
+	
+	<script type="text/javascript" src="js/jquery-1.6.1.min.js"></script>
+    <script type="text/javascript" src="../plugin/jquery-jplayer/jquery.jplayer.js"></script>
+    <script type="text/javascript" src="../plugin/ttw-music-player-min.js"></script>
+    <script type="text/javascript" src="js/myplaylist.js"></script>
+
+    <script type="text/javascript">
+        $(document).ready(function(){
+            var description = 'The #1 Best Free MP3 Music Downloads Site. ❤️Billions of Songs. ♫Search/play/download with title,artist,album or music/mp3 keywords from 5000+ MP3 sites ...';
+
+            $('body').ttwMusicPlayer(myPlaylist, {
+                autoPlay:false, 
+                description:description,
+                jPlayer:{
+                    swfPath:'../plugin/jquery-jplayer' //You need to override the default swf path any time the directory structure changes
+                }
+            });
+        });
+    </script>
+    <style type="text/css">
+<!--
+.style1 {
+	font-size: 24px;
+	font-weight: bold;
+}
+-->
+/*<!------download button------>*/
+body {
+	background-color: #0E0B16;
+}
+
+.buttonDownload {
+	display: inline-block;
+	position: relative;
+	padding: 20px 60px;
+
+	background-color: #05386B;
+	color: white;
+
+	font-family: sans-serif;
+	text-decoration: none;
+	font-size: 2.9em;
+	text-align: center;
+	text-indent: 15px;
+}
+
+.buttonDownload:hover {
+	background-color: #333;
+	color: white;
+}
+
+.buttonDownload:before, .buttonDownload:after {
+	content: ' ';
+	display: block;
+	position: absolute;
+	left: 25px;
+	top: 52%;
+}
+
+.dl
+{
+	float : left;
+	padding-top:300px;
+	}
+
+/* Download box shape  */
+.buttonDownload:before {
+	width: 40px;
+	height: 12px;
+	border-style: solid;
+	border-width: 0 2px 2px;
+}
+
+/* Download arrow shape */
+.buttonDownload:after {
+	width: 30px;
+	height: 30px;
+	margin-left: 3px;
+	margin-top: -7px;
+
+	border-style: solid;
+	border-width: 4px 4px 0 4px;
+	border-color: transparent;
+	border-top-color: inherit;
+
+	animation: downloadArrow 2s linear infinite;
+	animation-play-state: paused;
+}
+
+.buttonDownload:hover:before {
+	border-color: #05386B;
+}
+
+.buttonDownload:hover:after {
+	border-top-color: #05386B;
+	animation-play-state: running;
+}
+
+/* keyframes for the download icon anim */
+@keyframes downloadArrow {
+	/* 0% and 0.001% keyframes used as a hackish way of having the button frozen on a nice looking frame by default */
+	0% {
+		margin-top: -7px;
+		opacity: 1;
+	}
+
+	0.001% {
+		margin-top: -15px;
+		opacity: 0;
+	}
+
+	50% {
+		opacity: 1;
+	}
+
+	100% {
+		margin-top: 0;
+		opacity: 0;
+	}
+
+
+}
+
+/*style for table*/
+.table1{
+
+ float : right;
+ margin-top:120px
+ margin-right:20px;
+ }
+
+ .color1{
+ color:white;
+ }
+ 
+ .ffoot{
+ background-color:FFFFFF;
+ }
+ 
+ 
+ 
+</style>
+</head>
+
+<body>
+<!-------nav bar--------->
+<div class="w3-top">
+
+  <div class="w3-bar" id="myNavbar">
+ <a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);" onClick="toggleFunction()" title="Toggle Navigation Menu">
+      <i class="fa fa-bars"></i>
+    </a>
+	<div class="color1">
+    <a href="#home" class="w3-bar-item w3-button">HOME</a>
+    <a href="#tracks" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-th"></i> TRACKS</a>
+    <a href="#albums" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-th"></i> ALBUMS</a>
+    <a href="#coming soon" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-th"></i> COMING SOON</a>
+	<a href="#radio" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-th"></i> RADIO</a>
+	<a href="#buy" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-th"></i> BUY</a>
+	 <a href="#upload" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-th"></i> UPLOADS</a>
+	  <a href="#video" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-th"></i> VIDEOS</a>
+	   <a href="#online streaming" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-th"></i> ONLINE STREAMING</a>
+	   </div>
+	   <!----------a href="https://www.w3schools.com"----->
+<img src="cart1.jpg" alt="Go to W3Schools!" width="68" height="42" border="0">
+</a>
+ 
+<!----------end of nav bar------------>
+
+<div id="title"></div>
+
+
+<div class="style1" id="title2">
+  <span> beatPods</span></div>
+<div class="dl">
+<a href="1.mp3" class="buttonDownload" download>Download</a>
+</div>
+
+<div class="table1">
+<form id="form1" name="form1" method="post" action="">
+	
+  <table width="178" height="403" style="background-color:#05386B; width:181px">
+    <tr>
+      <td width="159" bordercolor="#0000FF"><label>
+        <input type="radio" name="RadioGroup1" value="radio" />
+        <font color="FFFFFF">Alternative</font>
+      </label></td>
+    </tr>
+    <tr>
+      <td bordercolor="red"><label>
+        <input type="radio" name="RadioGroup1" value="radio" />
+      <span style="color: black; ">
+	  <font color="FFFFFF">Art Punk</font>
+	  </span>
+	  </label></td>
+    </tr>
+    <tr>
+      <td bordercolor="#0000FF"><label>
+        <input type="radio" name="RadioGroup1" value="radio" />
+       <span style="color: black; ">
+	   <font color="FFFFFF">Blues</font>
+	   </span>
+	   </label></td>
+    </tr>
+    <tr>
+      <td bordercolor="#0000FF"><label>
+        <input type="radio" name="RadioGroup1" value="radio" />
+       <span style="color: black; ">
+	    <font color="FFFFFF">Country</font>
+		</span>
+	   </label></td>
+    </tr>
+    <tr>
+      <td bordercolor="#0000FF"><label>
+        <input type="radio" name="RadioGroup1" value="radio" />
+       <span style="color: black; ">
+	    <font color="FFFFFF">Classical</font>
+		</span>
+	   </label></td>
+    </tr>
+    <tr>
+      <td height="27" bordercolor="#0000FF"><label>
+        <input type="radio" name="RadioGroup1" value="radio" />
+		 <span style="color: black; ">
+		  <font color="FFFFFF">Dance</font>
+		  </span>
+		 </label></td>
+    </tr>
+    <tr>
+      <td height="28" bordercolor="#0000FF"><label>
+        <input type="radio" name="RadioGroup1" value="radio" />
+       <span style="color: black; ">
+	    <font color="FFFFFF">Electronic</font>
+		</span>
+	   </label></td>
+    </tr>
+    <tr>
+      <td height="31" bordercolor="#0000FF"><label>
+        <input type="radio" name="RadioGroup1" value="radio" />
+       <span style="color: black; ">
+	    <font color="FFFFFF">Heavy Metal</font>
+		</span>
+	   </label></td>
+    </tr>
+	 <tr>
+      <td height="28" bordercolor="#0000FF"><label>
+        <input type="radio" name="RadioGroup1" value="radio" />
+       <span style="color: black; ">
+	    <font color="FFFFFF">Jazz </font>
+		</span>
+	   </label></td>
+    </tr>
+	 <tr>
+      <td height="32" bordercolor="#0000FF"><label>
+        <input type="radio" name="RadioGroup1" value="radio" />
+        <span style="color: black; ">
+		 <font color="FFFFFF">Latin</font>
+		 </span>
+		</label></td>
+    </tr>
+	 <tr>
+      <td height="30" bordercolor="#0000FF"><label>
+        <input type="radio" name="RadioGroup1" value="radio" />
+       <span style="color: black; ">
+	    <font color="FFFFFF">Rock</font>
+		</span>
+	   </label></td>
+    </tr>
+	 <tr>
+      <td height="32" bordercolor="#0000FF"><label>
+        <input type="radio" name="RadioGroup1" value="radio" />
+       <span style="color: black; ">
+	    <font color="FFFFFF">Soundtrack</font>
+		</span>
+	   </label></td>
+	  
+    </tr>
+  </table>
+</form>
+  </div>
+  
+  
+  
+ <br/><br/><br/><br/>  <br/><br/><br/><br/>  <br/><br/><br/><br/>  <br/><br/><br/>  <br/><br/><br/>  <br/><br/><br/>
+
+
+
+<hr style="color:white;">
+
+<footer class="footer-distributed">
+
+			<div class="footer-right">
+			
+
+				<a href="https://www.facebook.com/"><i class="fa fa-facebook"></i></a>
+				<a href="https://www.twitter.com/"><i class="fa fa-twitter"></i></a>
+				<a href="https://www.linkedin.com/"><i class="fa fa-linkedin"></i></a>
+				<a href="https://www.github.com/"><i class="fa fa-github"></i></a>
+
+		
+
+			<div class="footer-left">
+			<div class="color1">
+
+				<p class="footer-links">
+					<a href="#">Home</a>
+					·
+					<a href="#">Blog</a>
+					·
+					<a href="#">Pricing</a>
+					·
+					<a href="#">About</a>
+					·
+					<a href="#">Faq</a>
+					·
+					<a href="#">Contact</a>
+				</p>
+
+				<p>beatPods &copy; 2018</p>
+				</div>
+			</div>
+			
+</footer>
+
+
+
+  
+  <script>
+  // Change style of navbar on scroll
+window.onscroll = function() {myFunction()};
+function myFunction() {
+    var navbar = document.getElementById("myNavbar");
+    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+        navbar.className = "w3-bar" + " w3-card" + " w3-animate-top" + " w3-white";
+    } else {
+        navbar.className = navbar.className.replace(" w3-card w3-animate-top w3-white", "");
+    }
+}
+// Used to toggle the menu on small screens when clicking on the menu button
+function toggleFunction() {
+    var x = document.getElementById("navDemo");
+    if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+    } else {
+        x.className = x.className.replace(" w3-show", "");
+    }
+}
+
+
+</script>
+
+</body>
+</html>
